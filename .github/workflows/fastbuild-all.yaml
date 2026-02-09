@@ -56,12 +56,6 @@ jobs:
       if: env.SKIP_TARGET == '0' && env.TEST != '1'
       run: scripts/cisteps/build-openwrt/03-clean_up.sh
 
-    # https://github.com/docker/setup-qemu-action
-    - name: Set up QEMU
-      id: buildx-qemy
-      if: env.SKIP_TARGET == '0'
-      uses: docker/setup-qemu-action@v3
-
     # https://github.com/docker/setup-buildx-action
     - name: Set up Docker Buildx
       id: buildx
