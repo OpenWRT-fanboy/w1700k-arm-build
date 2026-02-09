@@ -4,8 +4,8 @@ flex
 bison
 g++
 gawk
-gcc-multilib
-g++-multilib
+gcc
+g++
 gettext
 git
 libncurses5-dev
